@@ -18,3 +18,5 @@ In this repo, we have created EC2 as child module
 # Published Modules
 
 Modules that are avaibale through Terraform Registry
+
+# Tfvars is ignored in .gitignore

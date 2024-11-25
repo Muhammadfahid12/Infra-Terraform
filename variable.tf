@@ -25,3 +25,9 @@ variable "instance_name" {
  description = "The name of EC2-instance"
  type = string
 }
+
+variable "instance_count" {
+  description = "Number of EC2 Instances" 
+  type = number
+  default = 1
+}
