@@ -1,7 +1,6 @@
 variable "region" {
     description = "Region"
     type = string
-    default = "us-east-1"
   
 }
 
@@ -16,14 +15,15 @@ variable "ami" {
 variable "instance_type" {
   
   description = "Type of EC2"
-  type = string
-  default = "t2.micro"
+  type = list(string)
+  default = [""]
 }
 
 variable "instance_name" {
 
  description = "The name of EC2-instance"
- type = string
+ type = list(string)
+ default = [ "EC2" ]
 }
 
 variable "instance_count" {

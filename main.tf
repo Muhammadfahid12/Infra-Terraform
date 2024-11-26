@@ -7,8 +7,8 @@ provider "aws" {
 module "my_ec2" {
     source    =  "./modules/ec2"
     ami   =  var.ami
-    instance_type = var.instance_type
-    instance_name = var.instance_name
+    instance_type = var.instance_type[count.index]
+    instance_name = var.instance_name[count.index]
     count = var.instance_count
 
 }
